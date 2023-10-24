@@ -12,6 +12,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $_SESSION['message'] = 'Wie ist die Rahmengröße?';
     $_SESSION['text'] = $_POST['text'];
   }
+  else
+  if (empty($_POST['text'])) {
+    $_SESSION['message'] = 'Bitte schreibe mir einen Hinweis.';
+  }
   else {
     $_SESSION['message'] = 'Danke für die Hilfe';
     $_SESSION['text'] = '';
@@ -69,6 +73,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     input {
 	width: 4em;
     }
+    button {
+    	   padding: 10px;
+	   background-color: #000;
+	   color: #FFF;
+	   font-size: 1.2em;
+	   font-weight: strong;
+    }
     #message {
 	width: 80%;
 	border: solid 1px green;
@@ -80,7 +91,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <body>
     <section>
       <h1>Fahrrad geklaut</h1>
-      <p>Am Montag, 24.10. um 14 Uhr klaute dieser Mann das Fahrrad unserer Tochter aus unserem Vorgarten in der Bonner Altstadt. Wir hätten es gerne zurück.</p>
+      <p>Am Montag, 24.10. um 14 Uhr klaute <a href="bg.jpg">dieser Mann</a> das Fahrrad unserer Tochter aus unserem Vorgarten in der Bonner Altstadt. Wir hätten es gerne zurück.</p>
+      <?php
+      if ($message):
+      ?>
+      <div id="message">
+        <?= $message ?>
+      </div>
+      <?php
+      else:
+      ?>
       <div>
 	Marke: <strong>Winora</strong><br> 
         Typ: <strong>Domingo 24	Diamant</strong><br>
@@ -92,13 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       <p>Hinweis gerne an <strong>0160-1529500</strong> (SMS, Signal)</p>
       <?php
-      if ($message):
-      ?>
-      <div id="message">
-        <?= $message ?>
-      </div>
-      <?php
-      else:
+      endif;
       ?>
       <form method="POST">
 	<h2>Oder direkt hier:</h2>
@@ -109,9 +123,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	</fieldset>
 	<button type="submit">Abschicken</button>
       </form>
-      <?php
-      endif;
-      ?>
     </section>
   </body>
 </html>
