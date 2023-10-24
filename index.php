@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
   else
   if (empty($_POST['text'])) {
-    $_SESSION['message'] = 'Bitte schreibe mir einen Hinweis.';
+    $_SESSION['message'] = 'Bitte schreibe uns einen Hinweis.';
   }
   else {
     $_SESSION['message'] = 'Danke für die Hilfe';
@@ -116,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       ?>
       <form method="POST">
 	<h2>Oder direkt hier:</h2>
-	<textarea name="text" rows="4" placeholder="Hast du das Fahrrad oder den Mann gesehen? Schreibe mir hier gerne einen Hinweis."><?= $text ?></textarea>
+	<textarea name="text" rows="4" placeholder="Hast du das Fahrrad oder den Mann gesehen? Schreibe uns hier gerne einen Hinweis."><?= $text ?></textarea>
 	<fieldset>
 	  <label for="zahl">Spamschutz (Rahmengröße als Zahl):</label>
 	  <input name="zahl" type="number">
