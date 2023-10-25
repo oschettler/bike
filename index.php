@@ -29,8 +29,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Fahrrad geklaut: Bonn Altstadt. Codierung: BN 00 01616 014 LS 22</title>
+    <meta name="description" content="Foto und Video des Diebes, der am 24.10.2023 in der Bonner Altstadt ein codiertes Winora-Fahrrad klaute.">
+    <meta property="og:title" content="Fahrrad geklaut: Bonn Altstadt. Codierung: BN 00 01616 014 LS 22">
+    <link rel="me" href="https://bonn.social/@olav">
+    <link rel="me" href="https://schettler.net/olav/">
+    <meta name="og:description" content="Foto und Video des Diebes, der am 24.10.2023 in der Bonner Altstadt ein codiertes Winora-Fahrrad klaute.">
+    <meta property="og:url" content="https://bike.bonn.cafe/">
+    <meta property="og:image" content="https://bike.bonn.cafe/bg.jpg">
+    <meta property="og:video" content="https://bike.bonn.cafe/video.mp4">
+    <meta property="og:type" content="article">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -91,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <body>
     <section>
       <h1>Fahrrad geklaut</h1>
-      <p>Am Montag, 24.10. um 14 Uhr klaute <a href="bg.jpg">dieser Mann</a> das Fahrrad unserer Tochter aus unserem Vorgarten in der Bonner Altstadt. Wir hätten es gerne zurück.</p>
+      <p>Am Montag, 24.10. um 14 Uhr klaute <a href="bg.jpg">dieser Mann</a> das Fahrrad unserer Tochter aus unserem Vorgarten in der Bonner Altstadt (<a href="video.mp4">Video</a>). Wir hätten es gerne zurück.</p>
       <?php
       if ($message):
       ?>
