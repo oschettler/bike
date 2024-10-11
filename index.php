@@ -118,7 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         Codierung: <strong>BN 00 01616 014 LS 22</strong>
       </div>
 
-      <p>Hinweis gerne an <strong>0160-1529500</strong> (SMS, Signal)</p>
+      <p>Hinweis gerne an <strong>0160-1529500</strong> (SMS, Signal) oder über <a href="https://bikefinder.de/diebstahldatenbank/details.php?fid=14603">bikefinder</a></p>
       <?php
       endif;
       ?>
