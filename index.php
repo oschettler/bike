@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <body>
     <section>
       <h1>Fahrrad geklaut</h1>
-      <p>Am Montag, 24.10. um 14 Uhr klaute <a href="bg.jpg">dieser Mann</a> das Fahrrad unserer Tochter aus unserem Vorgarten in der Bonner Altstadt (<a href="video.mp4">Video</a>). Wir hätten es gerne zurück.</p>
+      <p>Am Montag, 24.10.2023 um 14 Uhr klaute <a href="bg.jpg">dieser Mann</a> das Fahrrad unserer Tochter aus unserem Vorgarten in der Bonner Altstadt (<a href="video.mp4">Video</a>). Wir hätten es gerne zurück.</p>
       <?php
       if ($message):
       ?>
